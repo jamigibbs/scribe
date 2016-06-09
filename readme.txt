@@ -68,8 +68,11 @@ Scribe includes support for Infinite Scroll in Jetpack. The theme will work out 
 
 == Changelog ==
 
-= 1.0 - June 09 2016 =
+= 1.0.0 - June 09 2016 =
 * Initial release
+
+= 1.0.1 - June 09 2016 =
+* Updating Theme URI
 
 == Credits ==
 
