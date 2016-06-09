@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+8.0 Footer
+--------------------------------------------------------------*/
+.site-footer {
+  border-top: 1px solid #efefef;
+  padding-top: 3em;
+  @extend %secondaryfont;
+  a {
+    font-weight: 400;
+  }
+  .widget {
+    font-size: 16px;
+    h2 {
+      font-size: 20px;
+    }
+    ul {
+      list-style: none;
+      margin-left: 0;
+    }
+  }
+
+  .site-info {
+    border-top: 1px solid #efefef;
+    font-size: 16px;
+    margin: 2em 0 2em 0;
+    padding-top: 2em;
+  }
+
+}

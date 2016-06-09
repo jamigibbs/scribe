@@ -1,0 +1,131 @@
+/*--------------------------------------------------------------
+3.1 Navigation
+--------------------------------------------------------------*/
+header .sticky {
+  position: absolute;
+}
+
+#site-navigation {
+  color: white;
+  position: relative;
+  @extend %secondaryfont;
+}
+
+.main-nav #header-menu a {
+  font-size: 14px;
+  &:hover {
+    color: $accent;
+  }
+}
+
+.is-drilldown-submenu {
+  background-color: black;
+}
+
+#header-menu {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.js-drilldown-back {
+  font-style: italic;
+}
+
+.is-drilldown-submenu-parent > a::after {
+  border-color: transparent transparent transparent #999999;
+}
+
+.js-drilldown-back > a::before {
+  border-color: transparent #999999 transparent transparent;
+}
+
+/** Navigation Panel **/
+
+.nav-btn, .nav-panel-header, .main-nav #header-menu a {
+  letter-spacing: 2px;
+}
+
+.nav-btn {
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: black;
+  padding: 1.5em 2em;
+  display: inline-block;
+  float: right;
+  margin-right: -0.9375rem;
+  // position: relative;
+  // right: -20px;
+  @include transition(background-color .2s ease-in-out);
+  &:hover {
+    color: white;
+  }
+}
+
+.nav-panel {
+  visibility: hidden;
+	transition: visibility 0s 0.6s;
+  &.is-visible {
+	  visibility: visible;
+	  transition: visibility 0s 0s;
+  }
+}
+
+.nav-panel-header {
+	position: fixed;
+	top: -50px;
+	width: 100%;
+	height: 50px;
+  padding: 1em;
+	transition: top 0.3s 0s;
+  h6 {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #999;
+  }
+  .nav-panel-close {
+    color: white;
+    font-size: 18px;
+    background-color: black;
+    float: right;
+    position: relative;
+    bottom: 5px
+  }
+}
+
+.is-visible .nav-panel-header {
+	top: 0;
+	transition: top 0.3s 0.3s;
+}
+
+.nav-panel-container {
+  z-index: 10;
+  background-color: black;
+	position: fixed;
+	width: 23%;
+	height: 100%;
+	top: 0;
+	right: 0;
+
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-delay: 0.3s;
+
+ 	transform: translate3d(100%, 0, 0);
+  @include bp-small {
+    width: 100%;
+  }
+  @include bp-medium {
+    width: 40%;
+  }
+}
+
+.nav-panel-content {
+  margin-top: 5em;
+}
+
+.is-visible .nav-panel-container {
+	transform: translate3d(0, 0, 0);
+	transition-delay: 0s;
+}

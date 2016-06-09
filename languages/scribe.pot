@@ -1,0 +1,208 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Scribe WordPress Theme\n"
+"POT-Creation-Date: 2016-06-09 11:47-0500\n"
+"PO-Revision-Date: 2016-06-09 11:46-0500\n"
+"Last-Translator: \n"
+"Language-Team: Jami Gibbs <jami0821@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:22
+msgid "404 Error"
+msgstr ""
+
+#: 404.php:27
+msgid "That page can&rsquo;t be found."
+msgstr ""
+
+#: comments.php:33
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:42 comments.php:64
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:45 comments.php:67
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:46 comments.php:68
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:81
+msgid "Comments are closed."
+msgstr ""
+
+#: customizer/settings.php:39
+msgid "Links Sitewide"
+msgstr ""
+
+#: customizer/settings.php:63
+msgid "Links Hover Sitewide"
+msgstr ""
+
+#: customizer/settings.php:87
+msgid "Navigation Links"
+msgstr ""
+
+#: customizer/settings.php:233
+msgid "Title Color"
+msgstr ""
+
+#: customizer/settings.php:256
+msgid "Subtitle Color"
+msgstr ""
+
+#: customizer/settings.php:279
+msgid "Meta Color"
+msgstr ""
+
+#: functions.php:50 header.php:78
+msgid "Primary"
+msgstr ""
+
+#: functions.php:109
+msgid "Footer"
+msgstr ""
+
+#: functions.php:111
+msgid "Add widgets to the footer"
+msgstr ""
+
+#: header.php:25
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:54 header.php:65
+msgid "Menu"
+msgstr ""
+
+#: inc/extras.php:41
+msgctxt "Merriweather font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/extras.php:47
+msgctxt "Roboto font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/template-tags.php:25
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:30
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:47 inc/template-tags.php:53
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:49
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:55
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:62
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:69 template-parts/content-page.php:63
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: index.php:33
+msgid "Latest"
+msgstr ""
+
+#: search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-none.php:19
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:26
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:30
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:36
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:52 template-parts/content.php:112
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post.
+#: template-parts/content.php:107
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Scribe"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://jamigibbs.com/demo/scribe"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Scribe is a beautiful and modern way to share your writing with the world."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "jami0821"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://jamigibbs.com"
+msgstr ""

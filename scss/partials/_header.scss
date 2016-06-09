@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+3.0 Header
+--------------------------------------------------------------*/
+.site-branding {
+  text-align: left;
+  padding-left: 1em;
+  margin: 2em 0 2em 0;
+  display: inline-block;
+  .site-title {
+    margin-bottom: 0;
+    line-height: 1;
+    a {
+      font-size: 34px;
+      color: $headers;
+      @extend %secondaryfont;
+      font-weight: 900;
+      font-style: italic;
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+  .site-description {
+    font-size: 16px;
+    color: $headers;
+  }
+}
+
+.primary-bg-image {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  @include bp-small {
+    background-attachment: scroll;
+  }
+}

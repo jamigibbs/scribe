@@ -1,0 +1,136 @@
+/*--------------------------------------------------------------
+5.0 Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+.comment-author, .comment-metadata, a.comment-reply-link, .form-submit input[type="submit"], .logged-in-as,	#cancel-comment-reply-link {
+	@extend %secondaryfont;
+}
+
+.comments-area {
+	h2.comments-title {
+		margin: 2em 0;
+		font-size: 24px;
+	}
+	ol {
+		list-style: none;
+		margin-left: 0;
+		.children {
+			margin-left: 80px;
+		}
+	}
+}
+
+ol.comment-list {
+	line-height: 2.4;
+}
+
+li.comment article {
+	margin-bottom: 5em;
+	img.avatar {
+		display: block;
+		float: left;
+		margin: 0 20px 0 0;
+	}
+	.comment-content {
+		background-color: #f8f8f8;
+		padding: 3em 3em 1em 3em;
+		p {
+			font-size: 16px;
+		}
+	}
+
+	cite {
+		margin-right: 1em;
+		color: $meta;
+	}
+	.comment-meta {
+    font-size: 14px;
+    line-height: 1.8;
+    padding-bottom: 1.1em;
+		padding-top: 0.75em;
+    text-transform: uppercase;
+    background-color: #FDFCFC;
+		a.comment-edit-link {
+			float: right;
+			&:hover {
+				color: $accent;
+			}
+		}
+		.comment-metadata a {
+			color: $meta;
+			text-transform: uppercase;
+			font-weight: 500;
+			margin-right: 1em;
+		}
+		.comment-author img {
+			position: relative;
+    	bottom: 0.6em;
+		}
+	}
+
+	a.comment-reply-link {
+		float: right;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: white;
+		background-color: black;
+		padding: 0.25em 1em;
+		@include transition(background-color .2s ease-in-out);
+    &:hover {
+      color: white;
+		}
+	}
+}
+
+.comment-respond {
+	margin: 3em 0;
+	h3.comment-reply-title {
+		font-size: 20px;
+	}
+	.comment-form-comment {
+		margin-bottom: 0;
+	}
+	.comment-form-comment label {
+		display: none;
+	}
+	.logged-in-as a {
+		font-size: 14px;
+		color: $meta;
+		font-weight: 400;
+	}
+	textarea {
+		background-color: #F8F8F8;
+		border: 10px solid #FDFCFC;
+		box-shadow: none;
+		margin-bottom: 1em;
+	}
+	.form-submit input[type="submit"] {
+    padding: 0.75em 1em;
+		@include transition(background-color .2s ease-in-out);
+    &:hover {
+      color: white;
+		}
+	}
+	a#cancel-comment-reply-link {
+		float: right;
+		position: relative;
+		top: 2.5em;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: $meta;
+		&:hover {
+			color: $accent;
+		}
+	}
+}

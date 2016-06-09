@@ -1,0 +1,183 @@
+/*--------------------------------------------------------------
+4.0 Posts & Pages
+--------------------------------------------------------------*/
+.site-content .large-6.columns {
+  background-color: white;
+}
+.sticky {
+  position: relative;
+	display: block;
+  background-color: #fdfdfd;
+  border: 1px solid #f6f6f6;
+  padding: 2em;
+}
+
+.hentry {
+	margin: 0;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 3em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.page .entry-header, .post .entry-header {
+  margin: 2em 0;
+  text-align: left;
+}
+
+.latest-posts-marker {
+    margin: 2em 0 1em 0;
+  span {
+    @extend %secondaryfont;
+    border: 1px solid #e2e2e2;
+    padding: 6px 9px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $meta;
+    font-size: 14px;
+  }
+}
+
+.rounded {
+  height: 100px;
+  width: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+article {
+  .home-featured-img {
+    margin-top: 0.5em;
+  }
+
+  .entry-content {
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 1em;
+    }
+    img {
+    	border: 10px solid #efefef;
+      &.alignleft {
+        margin-right: 1em;
+      }
+    }
+
+    .wp-caption .wp-caption-text {
+      background: #efefef;
+      padding: 1em;
+    	margin-top: 0;
+      line-height: 1.2;
+      font-size: 14px;
+    }
+  }
+
+  .featured-bg-image {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    @include bp-small {
+      background-attachment: scroll;
+    }
+  }
+
+  .entry-header {
+    margin-bottom: 4em;
+  }
+  .entry-meta {
+    @extend %secondaryfont;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $meta;
+    a {
+      color: $meta;
+    }
+  }
+  .more-link {
+    font-size: 14px;
+    display: block;
+    text-align: right;
+    margin: 2em 0;
+    @extend %secondaryfont;
+  }
+  h3.subtitle, h4.subtitle {
+    font-size: 26px;
+    color: $meta;
+    font-weight: 300;
+  }
+  h4.subtitle {
+    font-size: 22px;
+  }
+}
+
+.featured-bg-image .entry-header {
+  position: absolute;
+  bottom: 2em;
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+    line-height: 1.3;
+  }
+  .entry-meta, a {
+    color: white;
+  }
+  a:hover {
+    color: $accent;
+  }
+}
+
+h2.entry-title, h1.entry-title {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.entry-footer {
+  @extend %secondaryfont;
+  border-top: 1px solid #efefef;
+  padding: 2em 0 3em 0;
+  .cat-links, .tag-links, .edit-link {
+    display:block;
+  }
+
+}
+
+.posts-navigation, .navigation {
+
+  .nav-previous, .nav-next {
+    padding: 2em 0 4em 0;
+    @extend %secondaryfont;
+    a {
+      text-transform: uppercase;
+    }
+  }
+  .nav-previous {
+    float: left;
+  }
+
+  .nav-next {
+    float: right;
+  }
+}

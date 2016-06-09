@@ -1,0 +1,32 @@
+%primaryfont { font-family: 'Merriweather', serif; }
+%secondaryfont { font-family: 'Roboto', serif; }
+
+$content: #262626;
+$headers: #000000;
+$accent: #FF3300;
+$meta: #808080;
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin bp-large {
+  @media screen and (min-width: 64em) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media screen and (max-width: 39.9375em) {
+    @content;
+  }
+}
