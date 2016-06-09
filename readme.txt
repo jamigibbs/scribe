@@ -74,6 +74,9 @@ Scribe includes support for Infinite Scroll in Jetpack. The theme will work out 
 = 1.0.1 - June 09 2016 =
 * Updating Theme URI
 
+= 1.0.2 - June 09 2016 =
+* Updating Theme URI (again)
+
 == Credits ==
 
 * Foundation Framework - ​http://foundation.zurb.com/, License: GPL-2.0+ - http://www.gnu.org/licenses/gpl-2.0.html, Copyright: @ZURB
