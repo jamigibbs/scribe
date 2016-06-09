@@ -1,6 +1,6 @@
 ### Scribe WordPress Theme
 
-The Scribe is a WordPress theme that excels as a writing presentation tool. The focus is on your words. You can customize the theme with the native WordPress Customizer feature so you can change the theme's appearance.
+Scribe is a WordPress theme that excels as a writing presentation tool. The focus is on your words. You'll have access to several customization settings within the native WordPress Customizer such as sitewide colors, logo image, and custom background image settings.
 
 ### Installation
 
