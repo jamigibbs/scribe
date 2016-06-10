@@ -2,11 +2,11 @@
 msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"Project-Id-Version: Scribe WordPress Theme\n"
-"POT-Creation-Date: 2016-06-09 11:47-0500\n"
-"PO-Revision-Date: 2016-06-09 11:46-0500\n"
+"Project-Id-Version: Scribe\n"
+"POT-Creation-Date: 2016-06-10 14:41-0500\n"
+"PO-Revision-Date: 2016-06-10 14:40-0500\n"
 "Last-Translator: \n"
-"Language-Team: Jami Gibbs <jami0821@gmail.com>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -140,7 +140,7 @@ msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post
-#: inc/template-tags.php:69 template-parts/content-page.php:63
+#: inc/template-tags.php:69 template-parts/content-page.php:58
 #, php-format
 msgid "Edit %s"
 msgstr ""
@@ -176,12 +176,12 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:52 template-parts/content.php:112
+#: template-parts/content-page.php:47 template-parts/content.php:103
 msgid "Pages:"
 msgstr ""
 
 #. translators: %s: Name of current post.
-#: template-parts/content.php:107
+#: template-parts/content.php:98
 #, php-format
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
@@ -191,7 +191,7 @@ msgid "Scribe"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://jamigibbs.com/demo/scribe"
+msgid "http://wp.jamigibbs.com/scribe/about/"
 msgstr ""
 
 #. Description of the plugin/theme
