@@ -2,6 +2,8 @@
 
 Scribe is a WordPress theme that excels as a writing presentation tool. The focus is on your words. You'll have access to several customization settings within the native WordPress Customizer such as sitewide colors, logo image, and custom background image settings.
 
+![preview](screenshot.png)
+
 ### Installation
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
@@ -51,7 +53,10 @@ More information about child themes are available on [WordPress.org](https://cod
 
 **Does this theme support any plugins?**
 
-Scribe includes support for Infinite Scroll in Jetpack. The theme will work out of the box without needing to activate any plugins though.
+Scribe includes support for Infinite Scroll in [Jetpack](https://wordpress.org/plugins/jetpack/).
+To enable subtitles on posts and pages, install the [Subtitles](https://wordpress.org/plugins/subtitles/) plugin.
+
+All plugins are recommended and the theme will work out of the box.
 
 ### Roadmap
 

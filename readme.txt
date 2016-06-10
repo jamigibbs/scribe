@@ -5,7 +5,7 @@ Tags: one-column, custom-colors, custom-menu, editor-style, featured-image-heade
 
 Requires at least: 4.0
 Tested up to: 4.5.2
-Stable tag: 1.0.0
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,7 +60,10 @@ More information about child themes are [available on WordPress.org](https://cod
 
 = Does this theme support any plugins? =
 
-Scribe includes support for Infinite Scroll in Jetpack. The theme will work out of the box without needing to activate any plugins though.
+Scribe includes support for Infinite Scroll in [Jetpack](https://wordpress.org/plugins/jetpack/).
+To enable subtitles on posts and pages, install the [Subtitles](https://wordpress.org/plugins/subtitles/) plugin.
+
+All plugins are recommended and the theme will work out of the box.
 
 == Roadmap ==
 
@@ -68,14 +71,21 @@ Scribe includes support for Infinite Scroll in Jetpack. The theme will work out 
 
 == Changelog ==
 
-= 1.0.0 - June 09 2016 =
-* Initial release
+= 1.0.3 - June 10 2016 =
+* Adjusted post image alignment
+* Mobile display improvements
+* Removed custom subtitle meta box
+* Added style to pre and code tags
+* Regenerated .pot file
+
+= 1.0.2 - June 09 2016 =
+* Updating Theme URI (again)
 
 = 1.0.1 - June 09 2016 =
 * Updating Theme URI
 
-= 1.0.2 - June 09 2016 =
-* Updating Theme URI (again)
+= 1.0.0 - June 09 2016 =
+* Initial release
 
 == Credits ==
 

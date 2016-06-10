@@ -31,8 +31,8 @@
 			});
 
 			// Hide the nav when the 'x' is clicked
-			$('.nav-panel').on('click', function(event){
-				if( $(event.target).is('.nav-panel-close') ) {
+			$('.nav-panel-header').on('click', function(event){
+				if( $(event.target).is('.nav-panel-close, .nav-panel-header, h6') ) {
 					// Prevent the default click event from occuring
 					event.preventDefault();
 					$('.nav-panel').removeClass('is-visible');

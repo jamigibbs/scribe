@@ -28,11 +28,6 @@
 				<header class="entry-header">
 					<?php
 						the_title( '<h1 class="entry-title">', '</h1>' );
-
-						$subtitle = get_post_meta(get_the_ID(), 'sub_title', true);
-						if( isset($subtitle) ) {
-							echo '<h3 class="subtitle">' . esc_attr( $subtitle ) . '</h3>';
-						}
 					?>
 				</header><!-- .entry-header -->
 			</div>

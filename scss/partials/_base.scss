@@ -46,14 +46,20 @@ a {
   }
 }
 
-pre {
+code {
   background-color: #efefef;
+  border: none;
+  padding: 1em;
+}
+
+pre {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-weight: normal;
+  color: #0a0a0a;
+  background-color: #efefef;
+  border: none;
   padding: 2em;
-  white-space: pre-wrap;       /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  margin-bottom: 1em;
 }
 
 .alignleft {

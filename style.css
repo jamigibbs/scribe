@@ -4,7 +4,7 @@ Theme URI: http://wp.jamigibbs.com/scribe/about/
 Author: jami0821
 Author URI: http://jamigibbs.com
 Description: Scribe is a beautiful and modern way to share your writing with the world.
-Version: 1.0.2
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: scribe
@@ -83,19 +83,19 @@ a {
   a:hover {
     color: #FF3300; }
 
-pre {
+code {
   background-color: #efefef;
+  border: none;
+  padding: 1em; }
+
+pre {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-weight: normal;
+  color: #0a0a0a;
+  background-color: #efefef;
+  border: none;
   padding: 2em;
-  white-space: pre-wrap;
-  /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap;
-  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;
-  /* Opera 4-6 */
-  white-space: -o-pre-wrap;
-  /* Opera 7 */
-  word-wrap: break-word;
-  /* Internet Explorer 5.5+ */ }
+  margin-bottom: 1em; }
 
 .alignleft {
   display: inline;
@@ -210,10 +210,18 @@ input[type="submit"] {
   .site-branding .site-description {
     font-size: 16px;
     color: #000000; }
+  @media screen and (max-width: 39.9375em) {
+    .site-branding img {
+      margin: 0 auto;
+      display: table; } }
+  @media screen and (max-width: 39.9375em) {
+    .site-branding {
+      text-align: center;
+      padding: 0;
+      width: 100%; } }
 
 .primary-bg-image {
   position: relative;
-  background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -391,6 +399,16 @@ header .sticky {
 
 article .home-featured-img {
   margin-top: 0.5em; }
+  @media screen and (max-width: 39.9375em) {
+    article .home-featured-img {
+      margin: 0 auto;
+      display: table;
+      margin-bottom: 1em; } }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    article .home-featured-img {
+      margin: 0 auto;
+      display: table;
+      margin-bottom: 1em; } }
 article .entry-content h1, article .entry-content h2, article .entry-content h3, article .entry-content h4, article .entry-content h5, article .entry-content h6 {
   margin-bottom: 1em; }
 article .entry-content img {
@@ -430,12 +448,14 @@ article .more-link {
   display: block;
   text-align: right;
   margin: 2em 0; }
-article h3.subtitle, article h4.subtitle {
+article .entry-subtitle {
   font-size: 26px;
   color: #808080;
-  font-weight: 300; }
-article h4.subtitle {
-  font-size: 22px; }
+  font-weight: 300;
+  margin-bottom: 1em; }
+article .blog .entry-subtitle, article .home .entry-subtitle {
+  font-size: 22px;
+  margin-bottom: 0; }
 
 .featured-bg-image .entry-header {
   position: absolute;
@@ -453,10 +473,17 @@ h2.entry-title, h1.entry-title {
   font-size: 36px;
   margin-bottom: 0; }
 
+@media screen and (max-width: 39.9375em) {
+  .home h2.entry-title, .blog h2.entry-title, .home h4.subtitle, .blog h4.subtitle, .home .entry-meta, .blog .entry-meta {
+    text-align: center; } }
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .home h2.entry-title, .blog h2.entry-title, .home h4.subtitle, .blog h4.subtitle, .home .entry-meta, .blog .entry-meta {
+    text-align: center; } }
+
 .entry-footer {
   border-top: 1px solid #efefef;
   padding: 2em 0 3em 0; }
-  .entry-footer .cat-links, .entry-footer .tag-links, .entry-footer .edit-link {
+  .entry-footer .cat-links, .entry-footer .tag-links, .entry-footer .edit-link, .entry-footer .comments-link {
     display: block; }
 
 .posts-navigation .nav-previous, .posts-navigation .nav-next, .navigation .nav-previous, .navigation .nav-next {
@@ -659,6 +686,13 @@ object {
 .wp-caption-text {
   text-align: center; }
 
+figure.wp-caption {
+  margin: 0 0 2em 0; }
+  figure.wp-caption.alignleft {
+    margin-right: 1.5em; }
+  figure.wp-caption.alignright {
+    margin-left: 1.5em; }
+
 /*--------------------------------------------------------------
 7.2 Galleries
 --------------------------------------------------------------*/
@@ -718,5 +752,11 @@ object {
     font-size: 16px;
     margin: 2em 0 2em 0;
     padding-top: 2em; }
+    @media screen and (max-width: 39.9375em) {
+      .site-footer .site-info {
+        text-align: center; } }
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      .site-footer .site-info {
+        text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
