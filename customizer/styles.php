@@ -75,7 +75,7 @@ function scribe_customize_css()
         color: <?php echo esc_attr($scribe_page_post_title_color); ?>;
       }
 
-      .featured-bg-image h3.subtitle {
+      .featured-bg-image .entry-subtitle {
         color: <?php echo esc_attr($scribe_page_post_subtitle_color); ?>;
       }
 

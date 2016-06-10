@@ -449,12 +449,14 @@ article .more-link {
   display: block;
   text-align: right;
   margin: 2em 0; }
-article h3.subtitle, article h4.subtitle {
+article .entry-subtitle {
   font-size: 26px;
   color: #808080;
-  font-weight: 300; }
-article h4.subtitle {
-  font-size: 22px; }
+  font-weight: 300;
+  margin-bottom: 1em; }
+article .blog .entry-subtitle, article .home .entry-subtitle {
+  font-size: 22px;
+  margin-bottom: 0; }
 
 .featured-bg-image .entry-header {
   position: absolute;

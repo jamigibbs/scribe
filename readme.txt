@@ -60,7 +60,10 @@ More information about child themes are [available on WordPress.org](https://cod
 
 = Does this theme support any plugins? =
 
-Scribe includes support for Infinite Scroll in Jetpack. The theme will work out of the box without needing to activate any plugins though.
+Scribe includes support for Infinite Scroll in [Jetpack](https://wordpress.org/plugins/jetpack/).
+To enable subtitles on posts and pages, install the [Subtitles](https://wordpress.org/plugins/subtitles/) plugin.
+
+All plugins are recommended and the theme will work out of the box.
 
 == Roadmap ==
 

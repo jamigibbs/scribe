@@ -133,13 +133,15 @@ article {
     margin: 2em 0;
     @extend %secondaryfont;
   }
-  h3.subtitle, h4.subtitle {
+  .entry-subtitle {
     font-size: 26px;
     color: $meta;
     font-weight: 300;
+    margin-bottom: 1em;
   }
-  h4.subtitle {
+  .blog .entry-subtitle, .home .entry-subtitle {
     font-size: 22px;
+    margin-bottom: 0;
   }
 }
 

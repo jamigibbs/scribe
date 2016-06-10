@@ -34,11 +34,6 @@
 							the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 						}
 
-						$subtitle = get_post_meta(get_the_ID(), 'sub_title', true);
-						if( isset($subtitle) ) {
-							echo '<h3 class="subtitle">' . esc_attr( $subtitle ) . '</h3>';
-						}
-
 					if ( 'post' === get_post_type() ) : ?>
 					<div class="entry-meta">
 						<?php scribe_posted_on(); ?>
@@ -81,10 +76,6 @@
 								} else {
 									the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 								}
-
-								if ( get_post_meta( get_the_ID(), 'sub_title', true) ) :
-									echo '<h4 class="subtitle">' . esc_attr( get_post_meta( get_the_ID(), 'sub_title', true ) ) . '</h4>';
-								endif;
 
 							if ( 'post' === get_post_type() ) : ?>
 							<div class="entry-meta">

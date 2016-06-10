@@ -165,8 +165,3 @@ require get_template_directory() . '/customizer/sanitization.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
-
-/**
- * Load Meta file.
- */
-require get_template_directory() . '/inc/meta.php';
