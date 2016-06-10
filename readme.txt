@@ -5,7 +5,7 @@ Tags: one-column, custom-colors, custom-menu, editor-style, featured-image-heade
 
 Requires at least: 4.0
 Tested up to: 4.5.2
-Stable tag: 1.0.0
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,14 +71,21 @@ All plugins are recommended and the theme will work out of the box.
 
 == Changelog ==
 
-= 1.0.0 - June 09 2016 =
-* Initial release
+= 1.0.3 - June 10 2016 =
+* Adjusted post image alignment
+* Mobile display improvements
+* Removed custom subtitle meta box
+* Added style to pre and code tags
+* Regenerated .pot file
+
+= 1.0.2 - June 09 2016 =
+* Updating Theme URI (again)
 
 = 1.0.1 - June 09 2016 =
 * Updating Theme URI
 
-= 1.0.2 - June 09 2016 =
-* Updating Theme URI (again)
+= 1.0.0 - June 09 2016 =
+* Initial release
 
 == Credits ==
 
