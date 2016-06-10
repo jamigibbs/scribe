@@ -210,6 +210,15 @@ input[type="submit"] {
   .site-branding .site-description {
     font-size: 16px;
     color: #000000; }
+  @media screen and (max-width: 39.9375em) {
+    .site-branding img {
+      margin: 0 auto;
+      display: table; } }
+  @media screen and (max-width: 39.9375em) {
+    .site-branding {
+      text-align: center;
+      padding: 0;
+      width: 100%; } }
 
 .primary-bg-image {
   position: relative;
