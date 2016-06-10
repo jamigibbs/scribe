@@ -641,9 +641,6 @@ iframe,
 object {
   max-width: 100%; }
 
-figure.wp-caption {
-  margin: 0; }
-
 /*--------------------------------------------------------------
 7.1 Captions
 --------------------------------------------------------------*/
@@ -661,6 +658,13 @@ figure.wp-caption {
 
 .wp-caption-text {
   text-align: center; }
+
+figure.wp-caption {
+  margin: 0; }
+  figure.wp-caption.alignleft {
+    margin-right: 1.5em; }
+  figure.wp-caption.alignright {
+    margin-left: 1.5em; }
 
 /*--------------------------------------------------------------
 7.2 Galleries

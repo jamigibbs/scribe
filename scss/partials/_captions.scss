@@ -19,3 +19,13 @@
 .wp-caption-text {
 	text-align: center;
 }
+
+figure.wp-caption {
+  margin: 0;
+	&.alignleft {
+		margin-right: 1.5em;
+	}
+	&.alignright {
+		margin-left: 1.5em;
+	}
+}
