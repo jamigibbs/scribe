@@ -686,7 +686,7 @@ object {
   text-align: center; }
 
 figure.wp-caption {
-  margin: 0; }
+  margin: 0 0 2em 0; }
   figure.wp-caption.alignleft {
     margin-right: 1.5em; }
   figure.wp-caption.alignright {
