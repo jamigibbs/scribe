@@ -5,45 +5,53 @@
  * @package scribe
  */
 
-function scribe_subtitle() {
-  add_meta_box('scribe_subtitle_metabox', 'Edit Subtitle', 'scribe_subtitle_metabox', array( 'post', 'page' ), 'normal', 'high');
+function scribe_subtitle_meta() {
+  add_meta_box('scribe_subtitle_metabox', __( 'Edit Subtitle', 'scribe' ), 'scribe_subtitle_metabox_callback', array( 'post', 'page' ), 'normal', 'high');
 }
-add_action( 'add_meta_boxes', 'scribe_subtitle' );
+add_action( 'add_meta_boxes', 'scribe_subtitle_meta' );
 
-function scribe_subtitle_metabox() {
-  global $post;
+/**
+ * Save post metadata when a post is saved.
+ *
+ * @param obj $post The post object.
+ */
+function scribe_subtitle_metabox_callback( $post ) {
 
-  wp_nonce_field( plugin_basename( __FILE__ ), 'scribe_subtitle_nonce' ); ## Create nonce
+  // Create nonce
+  wp_nonce_field( basename( __FILE__ ), 'scribe_subtitle_nonce' );
 
-  $subtitle = get_post_meta($post->ID, 'sub_title', true); ## Get the subtitle
-  ?>
+  // Get the subtitle
+  $scribe_stored_meta = get_post_meta( $post->ID ); ?>
+
   <p>
     <label for="sub_title">Subtitle</label>
-    <input type="text" name="sub_title" id="sub_title" class="widefat" value="<?php if(isset($subtitle)) { echo $subtitle; } ?>" />
+    <input type="text" name="sub_title" id="sub_title" class="widefat" value="<?php if( isset( $scribe_stored_meta['sub_title'] ) ) { echo esc_attr( $scribe_stored_meta['sub_title'][0] ); } ?>" />
   </p>
+
   <?php
 }
 
-function scribe_subtitle_save_meta($post_id, $post) {
-  global $post;
+/**
+ * Save post metadata when a post is saved.
+ *
+ * @param int $post_id The post ID.
+ */
+function scribe_subtitle_save_meta( $post_id ) {
 
-  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
-    return false;
+  // Checks save status
+  $is_autosave = wp_is_post_autosave( $post_id );
+  $is_revision = wp_is_post_revision( $post_id );
+  $is_valid_nonce = ( isset( $_POST[ 'scribe_subtitle_nonce' ] ) && wp_verify_nonce( $_POST[ 'scribe_subtitle_nonce' ], basename( __FILE__ ) ) ) ? 'true' : 'false';
 
-  if ( !current_user_can( 'edit_post', $post->ID )) {
-    return $post->ID;
+  // Exits script depending on save status
+  if ( $is_autosave || $is_revision || !$is_valid_nonce ) {
+    return;
   }
 
-  if ( !wp_verify_nonce( $_POST['scribe_subtitle_nonce'], plugin_basename(__FILE__) )) {
-
-  } else {
-    if($_POST['sub_title']) {
-      update_post_meta($post->ID, 'sub_title', $_POST['sub_title']);
-    } else {
-      update_post_meta($post->ID, 'sub_title', '');
-    }
+  // Checks for input and sanitizes/saves if needed
+  if( isset( $_POST[ 'sub_title' ] ) ) {
+    update_post_meta( $post_id, 'sub_title', sanitize_text_field( $_POST[ 'sub_title' ] ) );
   }
 
-  return false;
 }
-add_action('save_post', 'scribe_subtitle_save_meta', 1, 2);
+add_action( 'save_post', 'scribe_subtitle_save_meta' );
