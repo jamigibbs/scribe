@@ -24,6 +24,12 @@
     font-size: 16px;
     margin: 2em 0 2em 0;
     padding-top: 2em;
+    @include bp-small {
+      text-align: center;
+    }
+    @include bp-medium {
+      text-align: center;
+    }
   }
 
 }
