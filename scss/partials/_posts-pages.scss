@@ -177,8 +177,8 @@ h2.entry-title, h1.entry-title {
   @extend %secondaryfont;
   border-top: 1px solid #efefef;
   padding: 2em 0 3em 0;
-  .cat-links, .tag-links, .edit-link {
-    display:block;
+  .cat-links, .tag-links, .edit-link, .comments-link{
+    display: block;
   }
 
 }

@@ -482,7 +482,7 @@ h2.entry-title, h1.entry-title {
 .entry-footer {
   border-top: 1px solid #efefef;
   padding: 2em 0 3em 0; }
-  .entry-footer .cat-links, .entry-footer .tag-links, .entry-footer .edit-link {
+  .entry-footer .cat-links, .entry-footer .tag-links, .entry-footer .edit-link, .entry-footer .comments-link {
     display: block; }
 
 .posts-navigation .nav-previous, .posts-navigation .nav-next, .navigation .nav-previous, .navigation .nav-next {
