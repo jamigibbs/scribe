@@ -2,6 +2,8 @@
 
 Scribe is a WordPress theme that excels as a writing presentation tool. The focus is on your words. You'll have access to several customization settings within the native WordPress Customizer such as sitewide colors, logo image, and custom background image settings.
 
+![preview](screenshot.png)
+
 ### Installation
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
