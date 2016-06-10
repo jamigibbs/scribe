@@ -66,6 +66,16 @@
 article {
   .home-featured-img {
     margin-top: 0.5em;
+    @include bp-small {
+      margin: 0 auto;
+      display: table;
+      margin-bottom: 1em;
+    }
+    @include bp-medium {
+      margin: 0 auto;
+      display: table;
+      margin-bottom: 1em;
+    }
   }
 
   .entry-content {
@@ -152,6 +162,15 @@ article {
 h2.entry-title, h1.entry-title {
   font-size: 36px;
   margin-bottom: 0;
+}
+
+.home h2.entry-title, .blog h2.entry-title, .home h4.subtitle, .blog h4.subtitle, .home .entry-meta, .blog .entry-meta {
+  @include bp-small {
+    text-align: center;
+  }
+  @include bp-medium {
+    text-align: center;
+  }
 }
 
 .entry-footer {

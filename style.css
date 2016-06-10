@@ -400,6 +400,16 @@ header .sticky {
 
 article .home-featured-img {
   margin-top: 0.5em; }
+  @media screen and (max-width: 39.9375em) {
+    article .home-featured-img {
+      margin: 0 auto;
+      display: table;
+      margin-bottom: 1em; } }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    article .home-featured-img {
+      margin: 0 auto;
+      display: table;
+      margin-bottom: 1em; } }
 article .entry-content h1, article .entry-content h2, article .entry-content h3, article .entry-content h4, article .entry-content h5, article .entry-content h6 {
   margin-bottom: 1em; }
 article .entry-content img {
@@ -461,6 +471,13 @@ article h4.subtitle {
 h2.entry-title, h1.entry-title {
   font-size: 36px;
   margin-bottom: 0; }
+
+@media screen and (max-width: 39.9375em) {
+  .home h2.entry-title, .blog h2.entry-title, .home h4.subtitle, .blog h4.subtitle, .home .entry-meta, .blog .entry-meta {
+    text-align: center; } }
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .home h2.entry-title, .blog h2.entry-title, .home h4.subtitle, .blog h4.subtitle, .home .entry-meta, .blog .entry-meta {
+    text-align: center; } }
 
 .entry-footer {
   border-top: 1px solid #efefef;
