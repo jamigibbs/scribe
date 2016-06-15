@@ -7,10 +7,10 @@
  */
 function scribe_custom_styles() {
 
-	wp_enqueue_style(
-		'scribe-custom-style',
-		get_template_directory_uri() . '/customizer/custom.css'
-	);
+  wp_enqueue_style(
+    'scribe-custom-style',
+    get_template_directory_uri() . '/customizer/custom.css'
+  );
 
   $scribe_link_color = get_theme_mod('scribe_link_color', '#262626'); //E.g. #FF0000
   $scribe_link_hover_color = get_theme_mod('scribe_link_hover_color', '#FF3300');
