@@ -92,6 +92,11 @@ function scribe_styles() {
         background-image: url({$scribe_primary_image});
         background-attachment: {$scribe_primary_img_bg_attachment};
       }
+			@media screen and (max-width: 39.9375em) {
+				.primary-bg-image {
+					background-attachment: scroll;
+				}
+			}
     ";
 
     if ( get_theme_mod('scribe_primary_image_overlay') == '' ) :
