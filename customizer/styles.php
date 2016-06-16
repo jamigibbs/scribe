@@ -12,7 +12,7 @@ function scribe_custom_styles() {
     get_template_directory_uri() . '/customizer/custom.css'
   );
 
-  $scribe_link_color = get_theme_mod('scribe_link_color', '#262626'); //E.g. #FF0000
+  $scribe_link_color = get_theme_mod('scribe_link_color', '#262626');
   $scribe_link_hover_color = get_theme_mod('scribe_link_hover_color', '#FF3300');
   $scribe_nav_link_color = get_theme_mod('scribe_nav_link_color', '#ffffff');
   $scribe_featured_img_bg_attachment = get_theme_mod('scribe_featured_img_bg_attachment', 'fixed');
@@ -21,6 +21,9 @@ function scribe_custom_styles() {
   $scribe_page_post_meta_color = get_theme_mod('scribe_page_post_meta_color', '#ffffff' );
 
   $scribe_custom_css = "
+
+    /* Theme Customizer Styles */
+
     .site-content a, .site-footer a {
       color: {$scribe_link_color};
     }
