@@ -18,6 +18,10 @@ header .sticky {
   }
 }
 
+#header-menu li.current-menu-item a {
+  color: $accent;
+}
+
 .is-drilldown-submenu {
   background-color: black;
 }

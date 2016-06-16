@@ -54,7 +54,7 @@ function scribe_styles() {
     .site-content a, .site-footer a {
       color: {$scribe_link_color};
     }
-    .site-content a:hover, .site-footer a:hover, .site-branding .site-title a:hover, .main-nav #header-menu a:hover, 	a.comment-reply-link:hover, .comment-meta a.comment-edit-link:hover, a#cancel-comment-reply-link:hover, .post .featured-bg-image .entry-header .entry-meta a:hover, .nav-panel-header .nav-panel-close:hover {
+    .site-content a:hover, .site-footer a:hover, .site-branding .site-title a:hover, .main-nav #header-menu a:hover, 	a.comment-reply-link:hover, .comment-meta a.comment-edit-link:hover, a#cancel-comment-reply-link:hover, .post .featured-bg-image .entry-header .entry-meta a:hover, .nav-panel-header .nav-panel-close:hover, #header-menu li.current-menu-item a, #header-menu li.current-menu-item a {
       color: {$scribe_link_hover_color};
     }
     .go-home:hover, .form-submit input[type=\"submit\"]:hover, li.comment article a.comment-reply-link:hover, .nav-btn:hover {

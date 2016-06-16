@@ -250,6 +250,9 @@ header .sticky {
   .main-nav #header-menu a:hover {
     color: #FF3300; }
 
+#header-menu li.current-menu-item a {
+  color: #FF3300; }
+
 .is-drilldown-submenu {
   background-color: black; }
 
