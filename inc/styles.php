@@ -10,7 +10,31 @@ function scribe_styles() {
 	/**
 	 * The main theme stylesheet
 	 */
-  wp_enqueue_style( 'scribe-style', get_stylesheet_uri(), array(), $scribe_theme['Version'] );
+   wp_enqueue_style(
+		 'scribe-style',
+			get_stylesheet_uri(),
+			array(
+				'scribe-foundation-style',
+				'scribe-fonts'
+			),
+			$scribe_theme['Version']
+		);
+
+	/**
+	 * Foundation Framework
+	 *
+	 * @link http://foundation.zurb.com/
+	 *
+	 */
+	wp_enqueue_style( 'scribe-foundation-style', get_stylesheet_directory_uri() . '/vendor/foundation/foundation.css', array(), '6.2.3', 'all' );
+
+	/**
+	 * Google Fonts
+	 *
+	 * @ref inc/extras.php
+	 *
+	 */
+	wp_enqueue_style( 'scribe-fonts', scribe_fonts_url(), array(), null );
 
 	/**
 	 * Get the user's custom styles
@@ -110,5 +134,6 @@ function scribe_styles() {
    *  @link https://developer.wordpress.org/reference/functions/wp_add_inline_style/
    */
   wp_add_inline_style( 'scribe-style', $scribe_custom_css );
+
 }
 add_action( 'wp_enqueue_scripts', 'scribe_styles' );
