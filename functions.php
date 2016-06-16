@@ -118,6 +118,11 @@ function scribe_widgets_init() {
 add_action( 'widgets_init', 'scribe_widgets_init' );
 
 /**
+ * Enqueue main stylesheet and custom styles
+ */
+require get_template_directory() . '/inc/styles.php';
+
+/**
  * Enqueue scripts and styles.
  */
 function scribe_scripts() {
@@ -129,8 +134,6 @@ function scribe_scripts() {
 
 	wp_enqueue_style( 'scribe-foundation-style', get_stylesheet_directory_uri() . '/vendor/foundation/foundation.css', array(), '6.2.3', 'all' );
 	wp_enqueue_style( 'scribe-fonts', scribe_fonts_url(), array(), null );
-
-	wp_enqueue_style( 'scribe-style', get_stylesheet_uri(),  array(), $scribe_theme['Version'] );
 
 	wp_enqueue_script( 'scribe-foundation-core', get_template_directory_uri() . '/vendor/foundation/foundation.js', array('jquery'), '6.2.2', false);
 	wp_enqueue_script( 'scribe-app', get_template_directory_uri() . '/js/app.js', array('jquery'), '1.0.0', true);
@@ -157,7 +160,6 @@ require get_template_directory() . '/inc/extras.php';
  * Customizer
  */
 require get_template_directory() . '/customizer/settings.php';
-require get_template_directory() . '/customizer/styles.php';
 require get_template_directory() . '/customizer/preview.php';
 require get_template_directory() . '/customizer/sanitization.php';
 

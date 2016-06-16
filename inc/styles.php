@@ -1,17 +1,20 @@
 <?php
 
-/**
- * Add user's custom styles to the header. Uses /customizer/custom.css
- *
- * @link https://developer.wordpress.org/reference/functions/wp_add_inline_style/
- */
-function scribe_custom_styles() {
+function scribe_styles() {
 
-  wp_enqueue_style(
-    'scribe-custom-style',
-    get_template_directory_uri() . '/customizer/custom.css'
-  );
+	/**
+	 * Get the theme's version number for cache busting
+	 */
+	$scribe_theme = wp_get_theme();
 
+	/**
+	 * The main theme stylesheet
+	 */
+  wp_enqueue_style( 'scribe-style', get_stylesheet_uri(), array(), $scribe_theme['Version'] );
+
+	/**
+	 * Get the user's custom styles
+	 */
   $scribe_link_color = get_theme_mod('scribe_link_color', '#262626');
   $scribe_link_hover_color = get_theme_mod('scribe_link_hover_color', '#FF3300');
   $scribe_nav_link_color = get_theme_mod('scribe_nav_link_color', '#ffffff');
@@ -101,6 +104,11 @@ function scribe_custom_styles() {
     ";
   endif;
 
-  wp_add_inline_style( 'scribe-custom-style', $scribe_custom_css );
+  /**
+   *  Loads the main stylesheet and user's custom styles to the header
+   *
+   *  @link https://developer.wordpress.org/reference/functions/wp_add_inline_style/
+   */
+  wp_add_inline_style( 'scribe-style', $scribe_custom_css );
 }
-add_action( 'wp_enqueue_scripts', 'scribe_custom_styles' );
+add_action( 'wp_enqueue_scripts', 'scribe_styles' );
