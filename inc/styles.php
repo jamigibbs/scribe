@@ -10,15 +10,15 @@ function scribe_styles() {
 	/**
 	 * The main theme stylesheet
 	 */
-   wp_enqueue_style(
-		 'scribe-style',
-			get_stylesheet_uri(),
-			array(
-				'scribe-foundation-style',
-				'scribe-fonts'
-			),
-			$scribe_theme['Version']
-		);
+	wp_enqueue_style(
+		'scribe-style',
+		get_stylesheet_uri(),
+		array(
+			'scribe-foundation-style',
+			'scribe-fonts'
+		),
+		$scribe_theme['Version']
+	);
 
 	/**
 	 * Foundation Framework
