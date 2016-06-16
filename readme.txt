@@ -5,7 +5,7 @@ Tags: one-column, custom-colors, custom-menu, editor-style, featured-image-heade
 
 Requires at least: 4.0
 Tested up to: 4.5.2
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,6 +70,12 @@ All plugins are recommended and the theme will work out of the box.
 * Add support for the [WP REST API](http://v2.wp-api.org/)
 
 == Changelog ==
+
+= 1.0.4 - June 16 2016 =
+* Added highlight to active navigation link
+* Added style to Custom Menu widget
+* Removed wp_head in favor of wp_add_inline_style
+* Fixed primary background image on mobile
 
 = 1.0.3 - June 10 2016 =
 * Adjusted post image alignment
