@@ -33,6 +33,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   7.1 Captions
   7.2 Galleries
 8.0 Footer
+9.0 Widgets
 
 
 --------------------------------------------------------------*/
@@ -758,5 +759,13 @@ figure.wp-caption {
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
       .site-footer .site-info {
         text-align: center; } }
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+.widget_nav_menu .menu > li {
+  display: block; }
+.widget_nav_menu .menu > li > a {
+  padding-left: 0; }
 
 /*# sourceMappingURL=style.css.map */
