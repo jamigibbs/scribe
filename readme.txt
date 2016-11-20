@@ -75,6 +75,7 @@ All plugins are recommended and the theme will work out of the box.
 * Removed README.md because .org have arbitrary rules. Sorry Github users.
 * Removed esc_url and echo for the_custom_logo output
 * Improved escaping for custom style output
+* Added conditional display for nav menu
 
 = 1.0.4 - June 16 2016 =
 * Added highlight to active navigation link

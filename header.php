@@ -51,11 +51,15 @@
 						endif; ?>
 					</div><!-- .site-branding -->
 
-					<a href="#0" class="nav-btn"><?php _e('Menu', 'scribe'); ?></a>
+					<?php if ( has_nav_menu( 'primary' ) ) : ?>
+						<a href="#0" class="nav-btn"><?php _e('Menu', 'scribe'); ?></a>
+					<?php endif; ?>
 
 				</div>
 
 			</div>
+
+			<?php if ( has_nav_menu( 'primary' ) ) : ?>
 
 			<div class="nav-panel">
 
@@ -90,6 +94,8 @@
 				</div> <!-- nav-panel-container -->
 
 			</div> <!-- nav-panel -->
+
+		<?php endif; ?>
 
 		</div> <!-- #site-navigation -->
 
