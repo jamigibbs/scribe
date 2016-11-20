@@ -1,11 +1,11 @@
 === Scribe ===
 
-Contributors: jamigibbs
+Contributors: jami0821
 Tags: one-column, custom-colors, custom-menu, editor-style, featured-image-header, featured-images, footer-widgets, sticky-post, theme-options, threaded-comments, translation-ready, blog, rtl-language-support
 
 Requires at least: 4.0
 Tested up to: 4.5.2
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -64,10 +64,6 @@ Scribe includes support for Infinite Scroll in [Jetpack](https://wordpress.org/p
 To enable subtitles on posts and pages, install the [Subtitles](https://wordpress.org/plugins/subtitles/) plugin.
 
 All plugins are recommended and the theme will work out of the box.
-
-== Roadmap ==
-
-* Add support for the [WP REST API](http://v2.wp-api.org/)
 
 == Changelog ==
 
