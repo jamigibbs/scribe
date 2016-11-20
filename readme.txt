@@ -73,6 +73,7 @@ All plugins are recommended and the theme will work out of the box.
 
 = 1.0.5 - Nov 20 2016 =
 * Removed README.md because .org have arbitrary rules. Sorry Github users.
+* Removed esc_url and echo for the_custom_logo output
 
 
 = 1.0.4 - June 16 2016 =

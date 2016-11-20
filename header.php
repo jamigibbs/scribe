@@ -34,7 +34,7 @@
 
 					<div class="site-branding">
 
-						<?php if ( has_custom_logo() ) : { echo esc_url( the_custom_logo() ); } endif; ?>
+						<?php if ( has_custom_logo() ) : { the_custom_logo(); } endif; ?>
 
 						<?php
 						if ( is_front_page() && is_home() ) : ?>
