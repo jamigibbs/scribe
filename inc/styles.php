@@ -138,7 +138,7 @@ function scribe_styles() {
    *
    *  @link https://developer.wordpress.org/reference/functions/wp_add_inline_style/
    */
-  wp_add_inline_style( 'scribe-style', $scribe_custom_css );
+  wp_add_inline_style( 'scribe-style', preg_replace('/\s\s+/', ' ', wp_strip_all_tags( $scribe_custom_css ) ) );
 
 }
 add_action( 'wp_enqueue_scripts', 'scribe_styles' );
