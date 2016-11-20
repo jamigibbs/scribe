@@ -39,6 +39,11 @@
 				}
 			});
 
+			$('.site-content').on('click', function(event){
+				event.preventDefault();
+				$('.nav-panel').removeClass('is-visible');
+			});
+
 		}
 	}
 	NavDisplay.init();
