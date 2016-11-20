@@ -71,6 +71,10 @@ All plugins are recommended and the theme will work out of the box.
 
 == Changelog ==
 
+= 1.0.5 - Nov 20 2016 =
+* Removed README.md because .org have arbitrary rules. Sorry Github users.
+
+
 = 1.0.4 - June 16 2016 =
 * Added highlight to active navigation link
 * Added style to Custom Menu widget
