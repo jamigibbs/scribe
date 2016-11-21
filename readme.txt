@@ -69,6 +69,8 @@ All plugins are recommended and the theme will work out of the box.
 
 = 1.0.6 - Nov 21 2016 =
 * Updated screenshot.png
+* Fixed content links not being clickable
+* Improved navigation closing
 
 = 1.0.5 - Nov 20 2016 =
 * Removed README.md because .org have arbitrary rules. Sorry Github users.

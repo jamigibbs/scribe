@@ -39,8 +39,7 @@
 				}
 			});
 
-			$('.site-content').on('click', function(event){
-				event.preventDefault();
+			$('.site-content, .featured-bg-image').on('click', function(event){
 				$('.nav-panel').removeClass('is-visible');
 			});
 
