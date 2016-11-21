@@ -126,9 +126,14 @@ require get_template_directory() . '/inc/styles.php';
  * Enqueue scripts.
  */
 function scribe_scripts() {
-	
+
+	/**
+	 * Get the theme's version number for cache busting
+	 */
+	$scribe_theme = wp_get_theme();
+
 	wp_enqueue_script( 'scribe-foundation-core', get_template_directory_uri() . '/vendor/foundation/foundation.js', array('jquery'), '6.2.2', false);
-	wp_enqueue_script( 'scribe-app', get_template_directory_uri() . '/js/app.js', array('jquery'), '1.0.0', true);
+	wp_enqueue_script( 'scribe-app', get_template_directory_uri() . '/js/app.js', array('jquery'), $scribe_theme['Version'], true);
 	wp_enqueue_script( 'scribe-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 
