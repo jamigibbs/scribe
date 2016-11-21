@@ -5,7 +5,7 @@ Tags: one-column, custom-colors, custom-menu, editor-style, featured-image-heade
 
 Requires at least: 4.0
 Tested up to: 4.5.2
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,6 +66,9 @@ To enable subtitles on posts and pages, install the [Subtitles](https://wordpres
 All plugins are recommended and the theme will work out of the box.
 
 == Changelog ==
+
+= 1.0.6 - Nov 21 2016 =
+* Updated screenshot.png
 
 = 1.0.5 - Nov 20 2016 =
 * Removed README.md because .org have arbitrary rules. Sorry Github users.
