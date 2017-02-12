@@ -57,7 +57,7 @@ get_header(); ?>
 		<div class="row bg-white">
 			<div class="large-8 large-centered columns">
 
-					get_template_part( 'template-parts/content', 'none' );
+					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 				</div>
 			</div>
